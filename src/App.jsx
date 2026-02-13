@@ -52,7 +52,7 @@ export default function Portfolio() {
         'Designed React frontend with interactive dashboards for monitoring and ROI analysis',
         'Implemented risk-scoring framework reducing ad spend by 76% while retaining 74% of buyers'
       ],
-      link: 'https://github.com/ShivVIT2019/campaign-targeting'
+      link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
     },
     {
       title: 'CreditAI Global - Multi-Country Credit Risk Platform',
