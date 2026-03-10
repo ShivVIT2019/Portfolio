@@ -81,11 +81,11 @@ export default function Portfolio() {
     {
       title: 'AI Product Manager Intern & Team Lead',
       company: 'Uplifty',
-      period: 'Aug 2025 - Present',
+      period: 'Aug 2025 - Feb 2026',
       highlights: [
-        'Built NLP-based text and image moderation systems (DistilBERT+RNN) replacing paid third-party APIs with scalable real-time inference pipelines on Google Cloud Run',
-        'Structured data schemas supporting 20+ application features; led cross-team standardization of ML deployment workflows accelerating demo delivery by 40%',
-        'Drove product iteration by evaluating model performance on live usage data, identifying error patterns to refine feature design and improve moderation accuracy'
+        'Deployed NLP-based text and image moderation system (DistilBERT, RNN, and rules engine) on Google Cloud Run, eliminating paid third-party APIs and delivering 60% cost reduction with 88.97% classification accuracy',
+        'Designed data schemas supporting 20+ application features; drove cross-team standardization of ML deployment workflows across a 6-engineer team, accelerating product demo delivery by 40%',
+        'Analyzed model performance on live usage data, identifying error patterns and edge cases that continuously improved moderation accuracy across production environments'
       ]
     },
     {
