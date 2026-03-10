@@ -45,7 +45,7 @@ export default function Portfolio() {
         { label: 'Ad Spend Saved', value: '76%', icon: Cpu }
       ],
       tech: ['Python', 'scikit-learn', 'FastAPI', 'React', 'Google Cloud Run', 'LangChain', 'Gemini API'],
-      description: 'End-to-end ML system on 12,330 user sessions with RAG-powered AI Assistant using Google Gemini. Deployed on Google Cloud Run with React dashboard.',
+      description: 'Built end-to-end ML system on 12,330 user sessions with 17 behavioral features. Extended with RAG-powered AI Assistant using Google Gemini + LangChain. FastAPI backend with 9 endpoints deployed on Google Cloud Run.',
       achievements: [
         'Trained Random Forest classifier achieving 89.32% AUC-ROC on 12,330 sessions',
         'Extended with RAG-powered AI Assistant using Google Gemini + LangChain for natural language Q&A',
@@ -66,7 +66,7 @@ export default function Portfolio() {
         { label: 'Profitability', value: '+23%', icon: TrendingUp }
       ],
       tech: ['Python', 'scikit-learn', 'Gradio', 'Google Cloud Run', 'Docker', 'CI/CD'],
-      description: 'Dual-market credit risk platform (USA/India) trained on 2.2M Lending Club loans with autonomous AI pricing agent using multi-factor weighted optimization.',
+      description: 'Dual-market credit risk platform (USA/India) trained on 2.2M Lending Club loans achieving 86.5% AUC-ROC. Autonomous AI pricing agent with multi-factor optimization deployed on Google Cloud Run.',
       achievements: [
         'Engineered dual-market credit scoring (USA FICO + India CIBIL) achieving 86.5% AUC-ROC',
         'Deployed autonomous AI pricing agent with multi-factor optimization (risk 60%, market 30%, profit 10%)',
