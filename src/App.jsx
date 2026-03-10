@@ -45,12 +45,12 @@ export default function Portfolio() {
         { label: 'Sessions', value: '12.3K', icon: Cpu }
       ],
       tech: ['Python', 'Random Forest', 'FastAPI', 'React', 'Docker'],
-      description: 'Full-stack ML system predicting online shopper purchase probability with precision-recall optimization for imbalanced data (15.47% positive class).',
+      description: 'Built end-to-end ML system on 12,330 user sessions with 17 behavioral features. Extended with RAG-powered AI Assistant using Google Gemini + LangChain. FastAPI backend with 9 endpoints deployed on Google Cloud Run.',
       achievements: [
-        'Trained Random Forest classifier on 12,330 sessions with 17 behavioral features',
-        'Built FastAPI backend with 8 RESTful endpoints for real-time/batch inference',
-        'Designed React frontend with interactive dashboards for monitoring and ROI analysis',
-        'Implemented risk-scoring framework reducing ad spend by 76% while retaining 74% of buyers'
+        'Trained Random Forest classifier achieving 89.32% AUC-ROC; addressed 15.47% class imbalance via precision-recall optimization',
+        'Extended with RAG-powered AI Assistant using Google Gemini + LangChain, enabling natural language Q&A over campaign analytics data',
+        'Designed FastAPI backend with 9 RESTful endpoints for real-time + batch inference with React dashboard for KPI monitoring',
+        'Implemented confidence-tier risk-scoring framework reducing ad spend 76% while retaining 74% of potential buyers (~30x ROI)'
       ],
       link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
     },
@@ -66,14 +66,14 @@ export default function Portfolio() {
         { label: 'Loans Analyzed', value: '100K', icon: BarChart3 }
       ],
       tech: ['Python', 'scikit-learn', 'Gradio', 'Streamlit Cloud', 'CI/CD'],
-      description: 'Multi-country credit risk platform with country-specific models adapting FICO to CIBIL scoring and regulatory identity verification.',
+      description: 'Dual-market credit risk platform (USA/India) trained on 2.2M Lending Club loans achieving 86.5% AUC-ROC. Autonomous AI pricing agent deployed on Google Cloud Run.',
       achievements: [
-        'Engineered models for USA and India achieving 86.5% AUC-ROC on 100K loans',
-        'Built end-to-end ML pipeline with preprocessing (median imputation, StandardScaler)',
-        'Implemented payment behavior analytics achieving 20% risk reduction',
-        'Deployed production Gradio app on Streamlit Cloud with <1s latency and automated CI/CD'
+        'Engineered dual-market credit scoring (USA FICO + India CIBIL) trained on 2.2M Lending Club loans achieving 86.5% AUC-ROC',
+        'Deployed autonomous AI pricing agent using multi-factor weighted optimization (risk 60%, market 30%, profit 10%)',
+        'Achieved 23% increase in expected portfolio profitability with per-applicant explainable reasoning',
+        'Built end-to-end Gradio application with real-time inference, feature importance visualization, and automated CI/CD on Google Cloud Run'
       ],
-      link: 'https://creditai-backend-405497784425.us-central1.run.app'
+      link: 'https://github.com/ShivVIT2019/creditai-global'
     }
   ];
 
@@ -83,9 +83,9 @@ export default function Portfolio() {
       company: 'Uplifty',
       period: 'Aug 2025 - Present',
       highlights: [
-        'Reduced content moderation costs by 60% building NLP-based text and image moderation systems (Python, scikit-learn, OpenCV)',
-        'Structured data schemas supporting 20+ application features and led cross-team ML deployment standardization',
-        'Drove product iteration evaluating model performance on live usage data, identifying error patterns to improve accuracy'
+        'Built NLP-based text and image moderation systems (DistilBERT+RNN) replacing paid third-party APIs with scalable real-time inference pipelines on Google Cloud Run',
+        'Structured data schemas supporting 20+ application features; led cross-team standardization of ML deployment workflows accelerating demo delivery by 40%',
+        'Drove product iteration by evaluating model performance on live usage data, identifying error patterns to refine feature design and improve moderation accuracy'
       ]
     },
     {
@@ -102,9 +102,9 @@ export default function Portfolio() {
       company: 'Philips Innovation Campus',
       period: 'Feb 2023 - Aug 2023',
       highlights: [
-        'Reduced manual ultrasound analysis time by 70% developing AI-powered laterality detection using YOLOv5 and OpenCV (80% clinical accuracy)',
-        'Built end-to-end GPU-accelerated pipeline with K-means clustering and ONNX model deployment for real-time clinical inference',
-        'Co-authored patent application for automated fetal ultrasound analysis; presented technical roadmaps to R&D stakeholders'
+        'Named inventor on international patent application ("Processing Ultrasound Image Data") assigned to Koninklijke Philips N.V., filed August 2025',
+        'Built laterality detection pipeline for obstetric ultrasound using YOLOv5 + OpenCV + ONNX; validated at Jackson Memorial Hospital with 10-person R&D team',
+        'Exported YOLOv5 model to ONNX format enabling cross-platform clinical deployment; presented technical roadmaps to cross-functional stakeholders'
       ]
     }
   ];
@@ -196,7 +196,7 @@ export default function Portfolio() {
             Building production ML systems that drive{' '}
             <span className="text-green-400 font-semibold">30× ROI improvements</span>.
             <br />
-            MS Computer Science (AI) @ Binghamton University | Graduating Dec 2026
+            MS Computer Science (AI) @ Binghamton University | Graduating May 2026
           </p>
 
           <div className="flex gap-4 justify-center items-center animate-slideUp" style={{ animationDelay: '0.5s' }}>
