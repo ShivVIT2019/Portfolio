@@ -218,9 +218,12 @@ export default function Portfolio() {
 
           <div className="space-y-12">
             {projects.map((project, idx) => (
-              <div
+              <a
                 key={idx}
-                className="group bg-gray-900/50 backdrop-blur border border-green-500/20 rounded-2xl p-8 hover:border-green-500/50 transition-all duration-500 hover:transform hover:scale-[1.02]"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gray-900/50 backdrop-blur border border-green-500/20 rounded-2xl p-8 hover:border-green-500/50 transition-all duration-500 hover:transform hover:scale-[1.02] block cursor-pointer"
                 style={{
                   animation: 'slideUp 0.6s ease-out',
                   animationDelay: `${idx * 0.2}s`,
@@ -283,7 +286,7 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -318,7 +321,7 @@ export default function Portfolio() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -349,7 +352,7 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
