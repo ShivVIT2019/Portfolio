@@ -34,46 +34,46 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Campaign Targeting ML Model',
+      title: 'AI-Powered Campaign Targeting System',
       role: 'ML Engineer',
-      company: 'Uplifty',
-      period: '2024',
-      impact: '30× ROI Improvement',
+      company: 'Personal Project',
+      period: 'Feb 2026',
+      impact: '~30× ROI Improvement',
       metrics: [
-        { label: 'ROI Increase', value: '30×', icon: TrendingUp },
-        { label: 'Model Accuracy', value: '89.32%', icon: BarChart3 },
-        { label: 'Production Scale', value: 'Real-time', icon: Cpu }
+        { label: 'ROI Improvement', value: '~30×', icon: TrendingUp },
+        { label: 'AUC-ROC', value: '89.32%', icon: BarChart3 },
+        { label: 'Ad Spend Saved', value: '76%', icon: Cpu }
       ],
-      tech: ['Python', 'Scikit-learn', 'PostgreSQL', 'Docker', 'AWS'],
-      description: 'Engineered a production ML system that transformed marketing ROI through intelligent campaign targeting. Built end-to-end from data pipeline to deployment.',
+      tech: ['Python', 'scikit-learn', 'FastAPI', 'React', 'Google Cloud Run', 'LangChain', 'Gemini API'],
+      description: 'End-to-end ML system on 12,330 user sessions with RAG-powered AI Assistant using Google Gemini. Deployed on Google Cloud Run with React dashboard.',
       achievements: [
-        'Designed feature engineering pipeline processing 100K+ user profiles',
-        'Achieved 89.32% AUC-ROC with ensemble of gradient boosting models',
-        'Deployed real-time inference API handling 1000+ requests/sec',
-        'Implemented A/B testing framework validating 30× ROI improvement'
+        'Trained Random Forest classifier achieving 89.32% AUC-ROC on 12,330 sessions',
+        'Extended with RAG-powered AI Assistant using Google Gemini + LangChain for natural language Q&A',
+        'Designed FastAPI backend with 9 RESTful endpoints; real-time + batch inference',
+        'Implemented confidence-tier risk-scoring reducing ad spend 76% while retaining 74% of buyers'
       ],
-      link: '#'
+      link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
     },
     {
-      title: 'Multi-Country Credit Risk Classifiers',
+      title: 'CreditAI Global – AI Credit Approval System',
       role: 'ML Engineer',
-      company: 'Uplifty',
-      period: '2024',
-      impact: 'Production Deployment',
+      company: 'Personal Project',
+      period: 'Dec 2025',
+      impact: '23% Portfolio Profitability Increase',
       metrics: [
-        { label: 'Countries', value: '5+', icon: TrendingUp },
-        { label: 'Models Deployed', value: '12', icon: Cpu },
-        { label: 'Data Points', value: '500K+', icon: BarChart3 }
+        { label: 'AUC-ROC', value: '86.5%', icon: BarChart3 },
+        { label: 'Training Data', value: '2.2M loans', icon: Cpu },
+        { label: 'Profitability', value: '+23%', icon: TrendingUp }
       ],
-      tech: ['Python', 'XGBoost', 'Pandas', 'FastAPI', 'Kubernetes'],
-      description: 'Built and deployed country-specific credit risk models handling diverse financial ecosystems and regulatory requirements across multiple markets.',
+      tech: ['Python', 'scikit-learn', 'Gradio', 'Google Cloud Run', 'Docker', 'CI/CD'],
+      description: 'Dual-market credit risk platform (USA/India) trained on 2.2M Lending Club loans with autonomous AI pricing agent using multi-factor weighted optimization.',
       achievements: [
-        'Developed modular ML pipeline supporting 5+ country-specific models',
-        'Engineered cross-market feature sets accounting for regional differences',
-        'Deployed 12 production models with automated retraining pipelines',
-        'Implemented model monitoring detecting drift across 500K+ predictions/month'
+        'Engineered dual-market credit scoring (USA FICO + India CIBIL) achieving 86.5% AUC-ROC',
+        'Deployed autonomous AI pricing agent with multi-factor optimization (risk 60%, market 30%, profit 10%)',
+        'Achieved 23% increase in expected portfolio profitability with per-applicant explainable reasoning',
+        'Built end-to-end Gradio app with real-time inference and automated CI/CD on Google Cloud Run'
       ],
-      link: '#'
+      link: 'https://creditai-backend-405497784425.us-central1.run.app'
     }
   ];
 
@@ -188,15 +188,15 @@ export default function Portfolio() {
           </p>
 
           <div className="flex gap-4 justify-center items-center animate-slideUp" style={{ animationDelay: '0.5s' }}>
-            <a href="https://github.com/atchu" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/ShivVIT2019" target="_blank" rel="noopener noreferrer" 
                className="p-3 bg-gray-900 hover:bg-green-500/20 border border-green-500/30 rounded-lg transition-all hover:scale-110">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com/in/atchu" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/atchyut/" target="_blank" rel="noopener noreferrer"
                className="p-3 bg-gray-900 hover:bg-green-500/20 border border-green-500/30 rounded-lg transition-all hover:scale-110">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:atchu@example.com"
+            <a href="mailto:sakella@binghamton.edu"
                className="p-3 bg-gray-900 hover:bg-green-500/20 border border-green-500/30 rounded-lg transition-all hover:scale-110">
               <Mail className="w-6 h-6" />
             </a>
@@ -369,7 +369,7 @@ export default function Portfolio() {
 
           <div className="flex gap-6 justify-center">
             <a
-              href="mailto:atchu@example.com"
+              href="mailto:sakella@binghamton.edu"
               className="px-8 py-4 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-lg transition-all transform hover:scale-105 flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />
