@@ -73,7 +73,7 @@ export default function Portfolio() {
         'Implemented payment behavior analytics achieving 20% risk reduction',
         'Deployed production Gradio app on Streamlit Cloud with <1s latency and automated CI/CD'
       ],
-      link: 'https://github.com/ShivVIT2019/creditai-global'
+      link: 'https://creditai-backend-405497784425.us-central1.run.app'
     }
   ];
 
