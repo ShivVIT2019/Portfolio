@@ -196,7 +196,7 @@ export default function Portfolio() {
             Building production ML systems that drive{' '}
             <span className="text-green-400 font-semibold">30× ROI improvements</span>.
             <br />
-            MS Computer Science (AI) @ Binghamton University | Graduating May 2026
+            MS Computer Science (AI) @ Binghamton University | Graduating December 2026
           </p>
 
           <div className="flex gap-4 justify-center items-center animate-slideUp" style={{ animationDelay: '0.5s' }}>
