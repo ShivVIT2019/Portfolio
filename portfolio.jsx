@@ -73,7 +73,7 @@ export default function Portfolio() {
         'Achieved 23% increase in expected portfolio profitability with per-applicant explainable reasoning',
         'Built end-to-end Gradio app with real-time inference and automated CI/CD on Google Cloud Run'
       ],
-      link: 'https://creditai-backend-405497784425.us-central1.run.app'
+      link: 'https://creditai-backend-727430679800.us-central1.run.app'
     }
   ];
 
