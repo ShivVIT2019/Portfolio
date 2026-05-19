@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronRight, Terminal, TrendingUp, BarChart3, Cpu } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -442,6 +443,7 @@ export default function Portfolio() {
           animation-fill-mode: both;
         }
       `}</style>
+      <Analytics />
     </div>
   );
 }
