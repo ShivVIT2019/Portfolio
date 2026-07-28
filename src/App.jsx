@@ -74,6 +74,27 @@ export default function Portfolio() {
         'Built end-to-end Gradio application with real-time inference, feature importance visualization, and automated CI/CD on Google Cloud Run'
       ],
       link: 'https://creditai-backend-727430679800.us-central1.run.app'
+    },
+    {
+      title: 'FinSight AI — Multi-Agent Financial Intelligence',
+      role: 'ML Engineer',
+      company: 'Personal Project',
+      period: 'Mar 2026',
+      impact: 'Multi-Agent LangGraph System',
+      metrics: [
+        { label: 'Agents', value: '2 LLM', icon: Cpu },
+        { label: 'Stack', value: 'LangGraph', icon: Terminal },
+        { label: 'Deploy', value: 'GCP', icon: TrendingUp }
+      ],
+      tech: ['Python', 'LangGraph', 'Gemini API', 'FastAPI', 'Streamlit', 'Docker', 'GCP'],
+      description: 'Multi-agent financial intelligence system using LangGraph orchestration. A Research Agent and Risk Agent share TypedDict state to collaboratively analyze stocks, retrieve real-time market data, and generate investment insights — deployed on Google Cloud Run.',
+      achievements: [
+        'Architected two-agent LangGraph pipeline with shared TypedDict state — Research Agent fetches live market data via yfinance, Risk Agent evaluates portfolio exposure and flags anomalies',
+        'Separated agent reasoning layer from tool execution layer, reducing redundant API calls and improving inference latency on Google Cloud Run',
+        'Built FastAPI backend with Streamlit frontend for real-time financial Q&A and stock analysis with streaming LLM responses',
+        'Containerized with Docker and deployed on Google Cloud Run with auto-scaling for production-grade reliability'
+      ],
+      link: 'https://finsight-ai-dashboard-727430679800.us-central1.run.app'
     }
   ];
 
