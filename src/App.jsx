@@ -398,11 +398,23 @@ export default function Portfolio() {
             <h2 className="text-5xl font-bold mb-4">Let's Connect</h2>
             <div className="h-1 w-24 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto" />
           </div>
-
-          <p className="text-xl text-gray-300 mb-8">
-            Currently exploring opportunities in ML Engineering and AI Product roles.
-          </p>
-
+<p className="text-xl text-gray-300 mb-6">
+  Currently exploring opportunities in ML Engineering and AI Product roles.
+</p>
+<div className="flex flex-wrap gap-3 justify-center mb-8">
+  <span className="px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-full text-green-400 text-sm font-mono">
+    🟢 Actively Interviewing
+  </span>
+  <span className="px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-full text-green-400 text-sm font-mono">
+    ⚡ Committing to GitHub Daily
+  </span>
+  <span className="px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-full text-green-400 text-sm font-mono">
+    📊 Learning Meta-Analysis (R)
+  </span>
+  <span className="px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-full text-green-400 text-sm font-mono">
+    🤖 Building AI Systems
+  </span>
+</div>
           <div className="flex gap-6 justify-center">
             <a
               href="mailto:sakella@binghamton.edu"
