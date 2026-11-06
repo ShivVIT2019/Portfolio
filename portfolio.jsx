@@ -55,25 +55,25 @@ export default function Portfolio() {
       link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
     },
     {
-      title: 'CreditAI Global – AI Credit Approval System',
+      title: 'CreditAI Global - Multi-Country Credit Risk Platform',
       role: 'ML Engineer',
       company: 'Personal Project',
       period: 'Dec 2025',
-      impact: '23% Portfolio Profitability Increase',
+      impact: 'Live dual-market credit scoring app',
       metrics: [
-        { label: 'AUC-ROC', value: '86.5%', icon: BarChart3 },
-        { label: 'Training Data', value: '2.2M loans', icon: Cpu },
-        { label: 'Profitability', value: '+23%', icon: TrendingUp }
+        { label: 'ROC-AUC', value: '0.7042', icon: BarChart3 },
+        { label: 'Training Rows', value: '100K', icon: Cpu },
+        { label: 'Markets', value: 'USA + India', icon: TrendingUp }
       ],
-      tech: ['Python', 'scikit-learn', 'Gradio', 'Google Cloud Run', 'Docker', 'CI/CD'],
-      description: 'Dual-market credit risk platform (USA/India) trained on 2.2M Lending Club loans achieving 86.5% AUC-ROC. Autonomous AI pricing agent with multi-factor optimization deployed on Google Cloud Run.',
+      tech: ['Python', 'scikit-learn', 'Gradio', 'Pydantic', 'Hugging Face Spaces', 'Git LFS'],
+      description: 'Dual-market (USA/India) credit assessment app. Random Forest trained on 100K rows sampled from the Lending Club 2007-2018 dataset (~2.26M rows total on Kaggle), ROC-AUC 0.7042 on a 20K held-out test set. India path maps CIBIL + city tier into the USA feature schema and calls the same model.',
       achievements: [
-        'Engineered dual-market credit scoring (USA FICO + India CIBIL) achieving 86.5% AUC-ROC',
-        'Deployed autonomous AI pricing agent with multi-factor optimization (risk 60%, market 30%, profit 10%)',
-        'Achieved 23% increase in expected portfolio profitability with per-applicant explainable reasoning',
-        'Built end-to-end Gradio app with real-time inference and automated CI/CD on Google Cloud Run'
+        'Baseline Random Forest on 100K Lending Club rows, ROC-AUC 0.7042 (saved in ml/artifacts/model_info.joblib)',
+        'Built a batch underwriting loop around the model: Pydantic validation, a priority-ordered policy engine, five fraud rules, and a JSON Lines audit log for every decision',
+        'Serves USA and India applicants through a translation layer that maps CIBIL + city tier + PAN/Aadhaar flags into the USA feature schema',
+        'Deployed on Hugging Face Spaces (migrated off Google Cloud Run after trial expiry); model artifacts shipped via Git LFS'
       ],
-      link: 'https://creditai-backend-727430679800.us-central1.run.app'
+      link: 'https://huggingface.co/spaces/sivasaiatchyut/creditai-global'
     }
   ];
 

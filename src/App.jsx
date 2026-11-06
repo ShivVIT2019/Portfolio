@@ -58,22 +58,22 @@ export default function Portfolio() {
       title: 'CreditAI Global - Multi-Country Credit Risk Platform',
       role: 'ML Engineer',
       company: 'Personal Project',
-      period: 'Feb 2026',
-      impact: '86.5% AUC-ROC',
+      period: 'Dec 2025',
+      impact: 'Live dual-market credit scoring app',
       metrics: [
-        { label: 'Countries', value: 'USA/India', icon: TrendingUp },
-        { label: 'AUC-ROC', value: '86.5%', icon: Cpu },
-        { label: 'Loans Analyzed', value: '100K', icon: BarChart3 }
+        { label: 'ROC-AUC', value: '0.7042', icon: BarChart3 },
+        { label: 'Training Rows', value: '100K', icon: Cpu },
+        { label: 'Markets', value: 'USA + India', icon: TrendingUp }
       ],
-      tech: ['Python', 'scikit-learn', 'Gradio', 'Streamlit Cloud', 'CI/CD'],
-      description: 'Dual-market credit risk platform (USA/India) trained on 2.2M Lending Club loans achieving 86.5% AUC-ROC. Autonomous AI pricing agent deployed on Google Cloud Run.',
+      tech: ['Python', 'scikit-learn', 'Gradio', 'Pydantic', 'Hugging Face Spaces', 'Git LFS'],
+      description: 'Dual-market (USA/India) credit assessment app. Random Forest trained on 100K rows sampled from the Lending Club 2007-2018 dataset (~2.26M rows total on Kaggle), ROC-AUC 0.7042 on a 20K held-out test set. India path maps CIBIL + city tier into the USA feature schema and calls the same model.',
       achievements: [
-        'Engineered dual-market credit scoring (USA FICO + India CIBIL) trained on 2.2M Lending Club loans achieving 86.5% AUC-ROC',
-        'Deployed autonomous AI pricing agent using multi-factor weighted optimization (risk 60%, market 30%, profit 10%)',
-        'Achieved 23% increase in expected portfolio profitability with per-applicant explainable reasoning',
-        'Built end-to-end Gradio application with real-time inference, feature importance visualization, and automated CI/CD on Google Cloud Run'
+        'Baseline Random Forest on 100K Lending Club rows, ROC-AUC 0.7042 (saved in ml/artifacts/model_info.joblib)',
+        'Built a batch underwriting loop around the model: Pydantic validation, a priority-ordered policy engine, five fraud rules, and a JSON Lines audit log for every decision',
+        'Serves USA and India applicants through a translation layer that maps CIBIL + city tier + PAN/Aadhaar flags into the USA feature schema',
+        'Deployed on Hugging Face Spaces (migrated off Google Cloud Run after trial expiry); model artifacts shipped via Git LFS'
       ],
-      link: 'https://creditai-backend-727430679800.us-central1.run.app'
+      link: 'https://huggingface.co/spaces/sivasaiatchyut/creditai-global'
     },
     {
       title: 'FinSight AI — Multi-Agent Financial Intelligence',
