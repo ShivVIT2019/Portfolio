@@ -38,10 +38,8 @@ export default function Portfolio() {
       role: 'ML Engineer',
       company: 'Personal Project',
       period: 'Feb 2026',
-      impact: '~30× ROI Improvement',
-      metrics: [
-        { label: 'ROI Increase', value: '~30×', icon: TrendingUp },
-        { label: 'AUC-ROC', value: '89.32%', icon: BarChart3 },
+      impact: 'Live ML + RAG targeting system',
+      metrics: [        { label: 'AUC-ROC', value: '89.32%', icon: BarChart3 },
         { label: 'Sessions', value: '12.3K', icon: Cpu }
       ],
       tech: ['Python', 'Random Forest', 'FastAPI', 'React', 'Docker'],
@@ -50,7 +48,7 @@ export default function Portfolio() {
         'Trained Random Forest classifier achieving 89.32% AUC-ROC; addressed 15.47% class imbalance via precision-recall optimization',
         'Extended with RAG-powered AI Assistant using Google Gemini + LangChain, enabling natural language Q&A over campaign analytics data',
         'Designed FastAPI backend with 9 RESTful endpoints for real-time + batch inference with React dashboard for KPI monitoring',
-        'Implemented confidence-tier risk-scoring framework reducing ad spend 76% while retaining 74% of potential buyers (~30x ROI)'
+        'Built a simulated A/B test endpoint that exposes the spend-reduction vs buyer-coverage trade-off curve at different confidence thresholds, so an analyst picks the operating point'
       ],
       link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
     },
@@ -215,7 +213,7 @@ export default function Portfolio() {
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed animate-slideUp" style={{ animationDelay: '0.3s' }}>
             Building production ML systems that drive{' '}
-            <span className="text-green-400 font-semibold">30× ROI improvements</span>.
+            <span className="text-green-400 font-semibold">live ML + RAG systems</span>.
             <br />
             MS Computer Science (AI) @ Binghamton University | Graduating December 2026
           </p>

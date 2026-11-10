@@ -38,19 +38,15 @@ export default function Portfolio() {
       role: 'ML Engineer',
       company: 'Personal Project',
       period: 'Feb 2026',
-      impact: '~30× ROI Improvement',
-      metrics: [
-        { label: 'ROI Improvement', value: '~30×', icon: TrendingUp },
-        { label: 'AUC-ROC', value: '89.32%', icon: BarChart3 },
-        { label: 'Ad Spend Saved', value: '76%', icon: Cpu }
-      ],
+      impact: 'Live ML + RAG targeting system',
+      metrics: [        { label: 'AUC-ROC', value: '89.32%', icon: BarChart3 },      ],
       tech: ['Python', 'scikit-learn', 'FastAPI', 'React', 'Google Cloud Run', 'LangChain', 'Gemini API'],
       description: 'Built end-to-end ML system on 12,330 user sessions with 17 behavioral features. Extended with RAG-powered AI Assistant using Google Gemini + LangChain. FastAPI backend with 9 endpoints deployed on Google Cloud Run.',
       achievements: [
         'Trained Random Forest classifier achieving 89.32% AUC-ROC on 12,330 sessions',
         'Extended with RAG-powered AI Assistant using Google Gemini + LangChain for natural language Q&A',
         'Designed FastAPI backend with 9 RESTful endpoints; real-time + batch inference',
-        'Implemented confidence-tier risk-scoring reducing ad spend 76% while retaining 74% of buyers'
+        'Built a simulated A/B test endpoint that exposes the spend-reduction vs buyer-coverage trade-off curve at different confidence thresholds, so an analyst picks the operating point'
       ],
       link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
     },
@@ -182,7 +178,7 @@ export default function Portfolio() {
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed animate-slideUp" style={{ animationDelay: '0.3s' }}>
             Building production ML systems that drive{' '}
-            <span className="text-green-400 font-semibold">30× ROI improvements</span>.
+            <span className="text-green-400 font-semibold">live ML + RAG systems</span>.
             <br />
             MS Computer Science (AI) @ Binghamton University.
           </p>
