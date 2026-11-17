@@ -93,17 +93,24 @@ Click **"Visit"** to see your live site!
 
 ## 🔄 Making Updates (After Initial Deploy)
 
-Every time you want to update your portfolio:
+Every merge to `main` deploys automatically. Use a pull request so you can check a preview first:
 
 ```bash
-# Make your changes to the files
-# Then:
-git add .
+git switch main && git pull
+# edit src/App.jsx, then:
+npm run build
+git checkout -b update-portfolio
+git add src/App.jsx
 git commit -m "Updated projects section"
-git push
+git push -u origin update-portfolio
+gh pr create --title "Updated projects section" --body "What changed"
 ```
 
-**Vercel automatically redeploys in ~1 minute!** No need to do anything on Vercel.
+1. Open the **Vercel Preview** link on the pull request and check the site.
+2. Merge: `gh pr merge --squash --delete-branch && git switch main && git pull`
+3. Vercel redeploys production in about a minute.
+
+Add only the files you changed rather than using `git add .`. The full process is in the README.
 
 ---
 

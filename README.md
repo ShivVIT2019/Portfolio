@@ -1,79 +1,76 @@
 # Atchyut Portfolio
 
-Personal portfolio website showcasing ML engineering projects and experience.
+Personal portfolio website showcasing ML engineering projects, hackathons, and experience.
 
-## 🚀 Quick Start - Deploy to Vercel
+**Live site:** https://portfolio-nine-rho-36.vercel.app
 
-### Step 1: Push to GitHub
+## Where the content lives
 
-1. Create a new repository on GitHub (e.g., `portfolio`)
-2. In your terminal, navigate to the project folder and run:
+All text on the site (projects, hackathons, experience, skills) is in **`src/App.jsx`**, in the `projects`, `experience`, and `skills` arrays near the top of the file. The page title and search description are in `index.html`.
 
-```bash
-git init
-git add .
-git commit -m "Initial commit - Portfolio website"
-git branch -M main
-git remote add origin https://github.com/ShivVIT2019/portfolio.git
-git push -u origin main
-```
+## Updating the site
 
-### Step 2: Deploy on Vercel
-
-1. Go to [vercel.com](https://vercel.com)
-2. Click "Sign up" and choose "Continue with GitHub"
-3. Click "Import Project" or "New Project"
-4. Import your `portfolio` repository
-5. Vercel will auto-detect Vite settings:
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-6. Click "Deploy"
-
-Your site will be live in ~2 minutes at: `https://your-portfolio.vercel.app`
-
-### Step 3: Add Custom Domain (Optional)
-
-1. In Vercel dashboard, go to your project → Settings → Domains
-2. Add your custom domain (e.g., `atchyut.dev`)
-3. Follow DNS configuration instructions
-4. SSL certificate auto-configures
-
-## 🛠️ Local Development
+Every merge to `main` deploys to production automatically on Vercel. Changes go through a pull request first, so you can check a preview before anything goes live.
 
 ```bash
-# Install dependencies
-npm install
+# 1. Start from the latest main
+git switch main && git pull
 
-# Start dev server
-npm run dev
-
-# Build for production
+# 2. Make your edits in src/App.jsx (or index.html), then check the build
 npm run build
 
-# Preview production build
-npm run preview
+# 3. Create a branch and commit only the files you changed
+git checkout -b update-portfolio
+git add src/App.jsx index.html
+git commit -m "Describe the change"
+git push -u origin update-portfolio
+
+# 4. Open a pull request
+gh pr create --title "Describe the change" --body "What changed and why"
 ```
 
-## 📁 Project Structure
+5. On the pull request page, open the **Vercel Preview** link and check the site.
+6. Merge it:
 
+```bash
+gh pr merge --squash --delete-branch && git switch main && git pull
 ```
-portfolio/
+
+7. Confirm the production deploy finished (look for `"state": "success"`):
+
+```bash
+gh api repos/ShivVIT2019/Portfolio/commits/$(git rev-parse HEAD)/status --jq '.statuses[] | {context, state}'
+```
+
+Then open the live site and refresh with `Cmd+Shift+R`.
+
+> Avoid `git add .` in this folder: add only the files you changed.
+
+## Local development
+
+```bash
+npm install       # install dependencies
+npm run dev       # start the dev server
+npm run build     # build for production
+npm run preview   # preview the production build
+```
+
+## Project structure
+portfolio-deployment/
 ├── src/
-│   ├── App.jsx          # Main portfolio component
-│   ├── main.jsx         # React entry point
-│   └── index.css        # Global styles
-├── index.html           # HTML entry point
-├── package.json         # Dependencies
-├── vite.config.js       # Vite configuration
-└── tailwind.config.js   # Tailwind configuration
-```
+│ ├── App.jsx # All site content and layout
+│ ├── main.jsx # React entry point
+│ └── index.css # Global styles
+├── index.html # Page title and description
+├── package.json # Dependencies
+├── vite.config.js # Vite configuration
+└── tailwind.config.js # Tailwind configuration
 
-## 🔄 Automatic Deployments
+## First-time setup
 
-After initial setup, every push to `main` branch automatically triggers a new deployment on Vercel!
+Setting up a new Vercel project from scratch is covered step by step in [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md).
 
-## 🌐 Technologies
+## Technologies
 
 - React 18
 - Vite
