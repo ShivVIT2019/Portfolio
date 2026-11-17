@@ -39,15 +39,15 @@ export default function Portfolio() {
       company: 'Personal Project',
       period: 'Feb 2026',
       impact: 'Live ML + RAG targeting system',
-      metrics: [        { label: 'AUC-ROC', value: '89.32%', icon: BarChart3 },
+      metrics: [        { label: 'ROC-AUC', value: '0.8932', icon: BarChart3 },
         { label: 'Sessions', value: '12.3K', icon: Cpu }
       ],
-      tech: ['Python', 'Random Forest', 'FastAPI', 'React', 'Docker'],
-      description: 'Built end-to-end ML system on 12,330 user sessions with 17 behavioral features. Extended with RAG-powered AI Assistant using Google Gemini + LangChain. FastAPI backend with 9 endpoints deployed on Google Cloud Run.',
+      tech: ['Python', 'Random Forest', 'FastAPI', 'React', 'ChromaDB', 'Docker'],
+      description: 'Built end-to-end ML system on 12,330 user sessions with 17 behavioral features. Extended with a RAG-powered AI Assistant using Google Gemini, ChromaDB, and Sentence Transformers. FastAPI backend with 8 endpoints deployed on Google Cloud Run.',
       achievements: [
-        'Trained Random Forest classifier achieving 89.32% AUC-ROC; addressed 15.47% class imbalance via precision-recall optimization',
-        'Extended with RAG-powered AI Assistant using Google Gemini + LangChain, enabling natural language Q&A over campaign analytics data',
-        'Designed FastAPI backend with 9 RESTful endpoints for real-time + batch inference with React dashboard for KPI monitoring',
+        'Trained a Random Forest classifier reaching 0.8932 ROC-AUC; handled the 15.47% class imbalance with precision-recall optimization',
+        'Added a RAG-powered AI Assistant using Google Gemini, ChromaDB, and Sentence Transformers, enabling natural language Q&A over campaign analytics data',
+        'Designed a FastAPI backend with 8 REST endpoints for real-time and batch inference, plus a React dashboard for KPI monitoring',
         'Built a simulated A/B test endpoint that exposes the spend-reduction vs buyer-coverage trade-off curve at different confidence thresholds, so an analyst picks the operating point'
       ],
       link: 'https://shivvit2019.github.io/Campaign_Targeting_System/'
@@ -142,18 +142,9 @@ export default function Portfolio() {
       company: 'Uplifty',
       period: 'Aug 2025 - Feb 2026',
       highlights: [
-        'Deployed NLP-based text and image moderation system (DistilBERT, RNN, and rules engine) on Google Cloud Run, eliminating paid third-party APIs and delivering 60% cost reduction with 88.97% classification accuracy',
-        'Designed data schemas supporting 20+ application features; drove cross-team standardization of ML deployment workflows across a 6-engineer team, accelerating product demo delivery by 40%',
+        'Built and deployed an NLP text-moderation system (DistilBERT, RNN, and a rules engine) on Google Cloud Run, replacing paid third-party moderation APIs with a self-hosted pipeline',
+        'Standardized ML deployment workflows across a 6-engineer team, cutting model configuration overhead and shortening the turnaround for product demos',
         'Analyzed model performance on live usage data, identifying error patterns and edge cases that continuously improved moderation accuracy across production environments'
-      ]
-    },
-    {
-      title: 'Research Assistant',
-      company: 'Binghamton University',
-      period: 'Jun 2025 - Dec 2025',
-      highlights: [
-        'Conducted 10 semi-structured interviews and analyzed qualitative data using Dedoose for "Exploring Global Perspectives in Social Work"',
-        'Ensured research integrity through data cleaning workflows, literature reviews, and IRB compliance (CITI Program certified)'
       ]
     },
     {
@@ -161,20 +152,20 @@ export default function Portfolio() {
       company: 'Philips Innovation Campus',
       period: 'Feb 2023 - Aug 2023',
       highlights: [
-        'Named inventor on international patent application ("Processing Ultrasound Image Data") assigned to Koninklijke Philips N.V., filed August 2025',
-        'Built laterality detection pipeline for obstetric ultrasound using YOLOv5 + OpenCV + ONNX; validated at Jackson Memorial Hospital with 10-person R&D team',
-        'Exported YOLOv5 model to ONNX format enabling cross-platform clinical deployment'
+        'Named inventor on international patent application PCT/EP2025/073715 ("Processing Ultrasound Image Data"), assigned to Koninklijke Philips N.V. and filed August 2025',
+        'Architected a laterality detection pipeline for obstetric ultrasound that classifies apical, basal, and subcostal orientations using YOLOv5, OpenCV, and ONNX',
+        'Productionized a GPU-accelerated pipeline with ONNX models on NVIDIA servers, enabling real-time inference on live cineloop feeds and removing the R&D team\'s dependency on third-party imaging tools'
       ]
     }
   ];
 
   const skills = {
     'Languages': ['Python', 'SQL', 'JavaScript'],
-    'ML/AI Frameworks': ['scikit-learn', 'TensorFlow', 'PyTorch', 'OpenCV', 'PySpark', 'Pandas', 'NumPy'],
-    'Web Development': ['React', 'Vite', 'Node.js', 'FastAPI', 'Flask'],
-    'Cloud & Deployment': ['Google Cloud Run', 'Render', 'AWS', 'Docker', 'GitHub Pages'],
-    'Developer Tools': ['Git', 'Linux', 'Apache Kafka', 'Jupyter Notebook', 'VS Code', 'Power BI'],
-    'Databases': ['MySQL', 'SQLite'],
+    'ML & Data': ['scikit-learn', 'PyTorch', 'pandas', 'NumPy', 'ONNX', 'OpenCV', 'YOLOv5'],
+    'LLM & Agents': ['LangGraph', 'RAG pipelines', 'Gemini', 'Vertex AI', 'MCP', 'Switch', 'Codex', 'Claude Code'],
+    'Web & APIs': ['FastAPI', 'REST APIs', 'React', 'Streamlit', 'Gradio'],
+    'Cloud & DevOps': ['Google Cloud Run', 'Hugging Face Spaces', 'Docker', 'Git', 'GitHub Actions', 'CI/CD'],
+    'Databases': ['PostgreSQL (via Supabase)', 'ChromaDB'],
     'Core Competencies': ['Machine Learning', 'Computer Vision', 'NLP', 'A/B Testing', 'Feature Engineering', 'Model Deployment']
   };
 
