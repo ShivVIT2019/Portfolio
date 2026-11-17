@@ -69,7 +69,8 @@ export default function Portfolio() {
         'Baseline Random Forest on 100K Lending Club rows, ROC-AUC 0.7042 (saved in ml/artifacts/model_info.joblib)',
         'Built a batch underwriting loop around the model: Pydantic validation, a priority-ordered policy engine, five fraud rules, and a JSON Lines audit log for every decision',
         'Serves USA and India applicants through a translation layer that maps CIBIL + city tier + PAN/Aadhaar flags into the USA feature schema',
-        'Deployed on Hugging Face Spaces (migrated off Google Cloud Run after trial expiry); model artifacts shipped via Git LFS'
+        'Deployed on Hugging Face Spaces (migrated off Google Cloud Run after trial expiry); model artifacts shipped via Git LFS',
+        'Added rule-based post-processing that converts the model probability into a decision, a credit limit capped at $30,000, and an APR band, plus a pricing agent that combines risk, market, and profit signals into per-applicant rate recommendations'
       ],
       link: 'https://huggingface.co/spaces/sivasaiatchyut/creditai-global'
     },
@@ -93,6 +94,45 @@ export default function Portfolio() {
         'Containerized with Docker and deployed on Google Cloud Run with auto-scaling for production-grade reliability'
       ],
       link: 'https://finsight-ai-dashboard-727430679800.us-central1.run.app'
+    },
+    {
+      title: 'Gauntlet — Multi-Agent Coding Referee',
+      role: 'Team of 2',
+      company: 'Flip the Switch Hackathon (WeMakeDevs), Track 01',
+      period: 'Nov 2026',
+      impact: 'Hackathon: agents race in team chat',
+      metrics: [
+        { label: 'Agent Vendors', value: '3', icon: Cpu },
+        { label: 'Honest Agents', value: '5/5 tests', icon: BarChart3 },
+        { label: 'Cheat Branch', value: '3/5 caught', icon: Terminal }
+      ],
+      tech: ['Python', 'Switch', 'Mattermost', 'Codex', 'Claude Code', 'OpenCode', 'Git'],
+      description: 'A team-chat workflow on Switch where Codex, Claude Code, and OpenCode agents work on the same coding task in parallel, each in an isolated Git worktree, coordinated by an orchestrator agent in a Mattermost channel. A rule-based referee scores every branch and a human approves what ships.',
+      achievements: [
+        'Wrote a rule-based referee in Python that re-runs the merge-base test suite on every agent branch and disqualifies branches that change, delete, or skip tests; in live races all three agents passed 5/5 while a test-tampering branch was caught at 3/5',
+        'Required an explicit human "ship it" before a pull request opens',
+        'Added a replay mode that reproduces scored results from a fresh clone without agent logins'
+      ],
+      link: 'https://github.com/ShivVIT2019/gauntlet'
+    },
+    {
+      title: 'Tessera — Plan a Week of Buffer Posts',
+      role: 'Team of 2',
+      company: 'Buffer Commit Build Contest',
+      period: 'Nov 2026',
+      impact: 'Hackathon: live app on the Buffer API',
+      metrics: [
+        { label: 'Tests', value: '24', icon: BarChart3 },
+        { label: 'API', value: 'Buffer', icon: Terminal },
+        { label: 'Deploy', value: 'Vercel', icon: TrendingUp }
+      ],
+      tech: ['TypeScript', 'Next.js', 'Buffer GraphQL API', 'OAuth 2.0 + PKCE', 'Vitest', 'Vercel'],
+      description: 'Plans a whole batch of social media posts at once and schedules them through the Buffer API, following each channel\'s rules and explaining every placement.',
+      achievements: [
+        'Built a deterministic TypeScript planning engine that schedules batches of social posts across Buffer channels under hard constraints (quiet hours, daily caps, gaps, existing queue) and explains every placement',
+        'Shipped a Next.js app on the Buffer GraphQL API (OAuth 2.0 + PKCE) with one-click Apply and Undo, verified on a live Buffer account; 24 tests, including property-based tests'
+      ],
+      link: 'https://tessera-adet.vercel.app'
     }
   ];
 
@@ -123,7 +163,7 @@ export default function Portfolio() {
       highlights: [
         'Named inventor on international patent application ("Processing Ultrasound Image Data") assigned to Koninklijke Philips N.V., filed August 2025',
         'Built laterality detection pipeline for obstetric ultrasound using YOLOv5 + OpenCV + ONNX; validated at Jackson Memorial Hospital with 10-person R&D team',
-        'Exported YOLOv5 model to ONNX format enabling cross-platform clinical deployment; presented technical roadmaps to cross-functional stakeholders'
+        'Exported YOLOv5 model to ONNX format enabling cross-platform clinical deployment'
       ]
     }
   ];
