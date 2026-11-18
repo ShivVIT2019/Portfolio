@@ -59,14 +59,14 @@ export default function Portfolio() {
       period: 'Dec 2025',
       impact: 'Live dual-market credit scoring app',
       metrics: [
-        { label: 'ROC-AUC', value: '0.7042', icon: BarChart3 },
+        { label: 'ROC-AUC', value: '0.7028', icon: BarChart3 },
         { label: 'Training Rows', value: '100K', icon: Cpu },
         { label: 'Markets', value: 'USA + India', icon: TrendingUp }
       ],
       tech: ['Python', 'scikit-learn', 'Gradio', 'Pydantic', 'Hugging Face Spaces', 'Git LFS'],
-      description: 'Dual-market (USA/India) credit assessment app. Random Forest trained on 100K rows sampled from the Lending Club 2007-2018 dataset (~2.26M rows total on Kaggle), ROC-AUC 0.7042 on a 20K held-out test set. India path maps CIBIL + city tier into the USA feature schema and calls the same model.',
+      description: 'Dual-market (USA/India) credit assessment app. Random Forest trained on 100K rows sampled from the Lending Club 2007-2018 dataset (~2.26M rows total on Kaggle), ROC-AUC 0.7028 on a 20K held-out test set. India path maps CIBIL + city tier into the USA feature schema and calls the same model.',
       achievements: [
-        'Baseline Random Forest on 100K Lending Club rows, ROC-AUC 0.7042 (saved in ml/artifacts/model_info.joblib)',
+        'Baseline Random Forest on 100K Lending Club rows, ROC-AUC 0.7028 (saved in ml/artifacts/model_info.joblib)',
         'Built a batch underwriting loop around the model: Pydantic validation, a priority-ordered policy engine, five fraud rules, and a JSON Lines audit log for every decision',
         'Serves USA and India applicants through a translation layer that maps CIBIL + city tier + PAN/Aadhaar flags into the USA feature schema',
         'Deployed on Hugging Face Spaces (migrated off Google Cloud Run after trial expiry); model artifacts shipped via Git LFS',
