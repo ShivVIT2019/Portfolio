@@ -91,9 +91,9 @@ export default function Portfolio() {
         'Architected two-agent LangGraph pipeline with shared TypedDict state — Research Agent fetches live market data via yfinance, Risk Agent evaluates portfolio exposure and flags anomalies',
         'Separated agent reasoning layer from tool execution layer, reducing redundant API calls and improving inference latency on Google Cloud Run',
         'Built FastAPI backend with Streamlit frontend for real-time financial Q&A and stock analysis with streaming LLM responses',
-        'Containerized with Docker and deployed on Google Cloud Run with auto-scaling for production-grade reliability'
+        'Containerized with Docker and ran on Google Cloud Run (service since taken down; code on GitHub)'
       ],
-      link: 'https://finsight-ai-dashboard-727430679800.us-central1.run.app'
+      link: 'https://github.com/ShivVIT2019/finsight-ai'
     },
     {
       title: 'Gauntlet — Multi-Agent Coding Referee',
