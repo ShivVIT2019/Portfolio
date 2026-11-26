@@ -70,6 +70,27 @@ export default function Portfolio() {
         'Deployed on Hugging Face Spaces (migrated off Google Cloud Run after trial expiry); model artifacts shipped via Git LFS'
       ],
       link: 'https://huggingface.co/spaces/sivasaiatchyut/creditai-global'
+    },
+    {
+      title: 'FinSight AI - Multi-Agent Financial Intelligence',
+      role: 'ML Engineer',
+      company: 'Personal Project',
+      period: 'Sept 2026 - Nov 2026',
+      impact: 'Live multi-agent LLM pipeline with real-time financial data',
+      metrics: [
+        { label: 'Avg Analysis', value: '~18s', icon: TrendingUp },
+        { label: 'Agents', value: '2', icon: Cpu },
+        { label: 'Tools', value: '4', icon: BarChart3 }
+      ],
+      tech: ['Python', 'LangGraph', 'Nebius Token Factory', 'OpenAI SDK', 'Gradio', 'yfinance', 'Hugging Face Spaces'],
+      description: 'A LangGraph multi-agent system where a Research Agent and a Risk Agent collaborate through typed shared state, calling real financial tools (yfinance) via a function-calling loop on Nebius Token Factory (openai/gpt-oss-120b). Produces an auditable investment brief in ~18s.',
+      achievements: [
+        'Orchestrated a two-agent LangGraph pipeline (Research + Risk) over a typed shared FinState, with explicit tool_calls visible in every step',
+        'Built four real financial tools (market data, risk metrics, peer comparison, financial summary) over yfinance; exposed the same tools over an MCP server for any MCP client',
+        'Migrated the LLM backbone from Gemini/Vertex to Nebius Token Factory (OpenAI-compatible, openai/gpt-oss-120b) without touching the agent graph or the tool layer',
+        'Redeployed from a dead Google Cloud Run demo to a one-container Gradio app on Hugging Face Spaces; full migration journal in MIGRATION.md'
+      ],
+      link: 'https://huggingface.co/spaces/sivasaiatchyut/finsight-ai'
     }
   ];
 
