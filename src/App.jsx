@@ -86,10 +86,10 @@ metrics: [
 { label: 'Deploy', value: 'HF Spaces', icon: TrendingUp }
 ],
 tech: ['Python', 'LangGraph', 'Nebius Token Factory', 'OpenAI SDK', 'MCP', 'Gradio', 'yfinance', 'Hugging Face Spaces'],
-description: 'Multi-agent financial intelligence system using LangGraph orchestration. A Research Agent and a Risk Agent share typed FinState to collaboratively analyze stocks, retrieve real-time market data via yfinance tools exposed over an MCP server, and generate auditable investment briefs. LLM backbone on Nebius Token Factory (openai/gpt-oss-120b); live on Hugging Face Spaces.',
+description: 'Multi-agent financial intelligence system using LangGraph orchestration. A Research Agent and a Risk Agent share typed FinState to collaboratively analyze stocks, call yfinance tools directly through a function-calling loop (the same tool schemas are also served over a FastMCP server for external MCP clients), and generate auditable investment briefs. LLM backbone on Nebius Token Factory (openai/gpt-oss-120b); live on Hugging Face Spaces.',
 achievements: [
 'Architected a two-agent LangGraph pipeline with typed shared FinState — Research Agent (market data, financials, peers) and Risk Agent (volatility, Sharpe, drawdown, beta) each drive their own function-calling loop',
-'Built four real financial tools over yfinance and exposed the same schema through an MCP server for any MCP client; tool-use is visible step-by-step in every analysis',
+'Built four real financial tools over yfinance called directly by the agents; the same tool schemas are also served over a FastMCP server for external MCP clients',
 'Migrated the LLM backbone from Gemini/Vertex to Nebius Token Factory (OpenAI-compatible, openai/gpt-oss-120b) without changing the agent graph, typed state, or tool layer',
 'Redeployed from a dead Google Cloud Run demo to a one-container Gradio app on Hugging Face Spaces; full migration journal in MIGRATION.md on the repo'
 ],
